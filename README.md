@@ -93,7 +93,7 @@ bundle add webrick
 bundle info minima 
 ```
 
-- **per theme nou** desmarcar a fitxer **_config.yml**
+- **per theme nou** comentar a fitxer **_config.yml**
 ```
 # Build settings
 # theme: minima
@@ -102,7 +102,7 @@ bundle info minima
 ```
 - eliminar fitxers **index.html** / **index.markdown** / **index.md**
 
-- el lloc es renderitzarà per defecte a carpeta **_site**
+- el lloc es renderitzarà dinàmicament a carpeta **_site**
 
 
 
@@ -149,6 +149,15 @@ show_dir_listing    : false
 - https://jekyllrb.com/docs/installation/other-linux/
 - https://jekyllrb.com/docs/
 - https://jekyllrb.com/docs/step-by-step/01-setup/
+- https://jekyllrb.com/docs/step-by-step/02-liquid/
+- https://jekyllrb.com/docs/step-by-step/03-front-matter/
+- https://jekyllrb.com/docs/step-by-step/04-layouts/
+- https://jekyllrb.com/docs/step-by-step/05-includes/
+- https://jekyllrb.com/docs/step-by-step/06-data-files/
+- https://jekyllrb.com/docs/step-by-step/07-assets/
+- https://jekyllrb.com/docs/step-by-step/08-blogging/
+- https://jekyllrb.com/docs/step-by-step/09-collections/
+- https://jekyllrb.com/docs/step-by-step/10-deployment/
 
 ------------------
 
