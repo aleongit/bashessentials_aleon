@@ -103,8 +103,6 @@ bundle info minima
 ```
 # Build settings
 # theme: minima
-# plugins:
-#   - jekyll-feed
 ```
 - eliminar fitxers **index.html** / **index.markdown** / **index.md**
 
