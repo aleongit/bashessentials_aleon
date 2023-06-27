@@ -6,9 +6,15 @@
 
 
 ## TODO
+- pages
 - layouts
-- css or sass
+- includes
+- data
+- sass
+- plugins
+- pagination
 - posts (scripts)
+
 
 
 ## requeriments
@@ -105,6 +111,19 @@ bundle info minima
 - el lloc es renderitzarà dinàmicament a carpeta **_site**
 
 
+- **plug ins**
+- afegir a **Gemfile**
+```
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
+  gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
+end
+```
+
+```
+bundle update
+```
 
 
 
@@ -158,6 +177,13 @@ show_dir_listing    : false
 - https://jekyllrb.com/docs/step-by-step/08-blogging/
 - https://jekyllrb.com/docs/step-by-step/09-collections/
 - https://jekyllrb.com/docs/step-by-step/10-deployment/
+
+------------------
+
+- **resources jekyll**
+- https://jekyllrb.com/resources/
+- http://jekyllthemes.org/
+- https://github.com/jekyll/minima
 
 ------------------
 
