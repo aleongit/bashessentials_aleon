@@ -109,7 +109,10 @@ bundle info minima
 - el lloc es renderitzarà dinàmicament a carpeta **_site**
 
 
-- **plug ins**
+
+
+## plugins
+
 - afegir a **Gemfile**
 ```
 group :jekyll_plugins do
@@ -122,6 +125,7 @@ end
 ```
 bundle update
 ```
+
 
 
 
