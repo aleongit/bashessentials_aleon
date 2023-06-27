@@ -44,6 +44,27 @@
 
 
 
+## TODO: Get Started
+- git clone https://github.com/aleongit/bashessentials_aleon.git
+- TODO
+
+
+
+## run
+- cd bashessentials_aleon
+- bundle exec jekyll serve
+- Browse to http://localhost:4000
+- or change host in **_config.yml**
+```
+# Serving
+detach              : false
+port                : 4000
+host                : 192.168.1.50
+baseurl             : "" # does not include hostname
+show_dir_listing    : false
+```
+
+
 
 ## installation in Arch Linux
 
@@ -91,9 +112,9 @@ bundle add webrick
 
 
 
-## jekill configuration
+## jekyll configuration
 
-- per defecte jekill es carrega amb **theme minima**
+- per defecte jekyll es carrega amb **theme minima**
 - per veure path theme
 ```
 bundle info minima 
@@ -126,28 +147,6 @@ end
 bundle update
 ```
 
-
-
-
-## TODO: Get Started
-- git clone https://github.com/aleongit/bashessentials_aleon.git
-- TODO
-
-
-
-## run
-- cd bashessentials_aleon
-- bundle exec jekyll serve
-- Browse to http://localhost:4000
-- or change host in **_config.yml**
-```
-# Serving
-detach              : false
-port                : 4000
-host                : 192.168.1.50
-baseurl             : "" # does not include hostname
-show_dir_listing    : false
-```
 
 
 ## VMware
