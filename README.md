@@ -85,9 +85,33 @@ bundle add webrick
 
 
 
+## jekill configuration
+
+- per defecte jekill es carrega amb **theme minima**
+- per veure path theme
+```
+bundle info minima 
+```
+
+- **per theme nou** desmarcar a fitxer **_config.yml**
+```
+# Build settings
+# theme: minima
+# plugins:
+#   - jekyll-feed
+```
+- eliminar fitxers **index.html** / **index.markdown** / **index.md**
+
+- el lloc es renderitzarà per defecte a carpeta **_site**
+
+
+
+
+
 ## TODO: Get Started
 - git clone https://github.com/aleongit/bashessentials_aleon.git
 - TODO
+
 
 
 ## run
