@@ -140,12 +140,35 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem 'jekyll-sitemap'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-paginate'
 end
 ```
 
 ```
 bundle update
 ```
+
+- a fitxer **_config.yml**
+```
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+```
+
+
+## pagination
+
+- https://jekyllrb.com/docs/pagination/
+- instal·lar plugin **jekyll-paginate**
+- a fitxer **_config.yml**
+```
+paginate: 5
+paginate_path: "/blog/page:num/"
+```
+- només funciona per a pàgines **index.html**
+- si es vol fer servir paginació a una pàgina diferent a **index.html**, cal crear **subcarpeta/index.html** (blog/index.html)
 
 
 
@@ -178,6 +201,9 @@ bundle update
 - https://jekyllrb.com/docs/step-by-step/08-blogging/
 - https://jekyllrb.com/docs/step-by-step/09-collections/
 - https://jekyllrb.com/docs/step-by-step/10-deployment/
+- https://jekyllrb.com/docs/structure/
+- https://jekyllrb.com/docs/variables/
+- https://jekyllrb.com/docs/pagination/
 
 ------------------
 
