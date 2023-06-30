@@ -217,6 +217,7 @@ paginate_path: "/blog/page:num/"
 - **liquid**
 - https://shopify.github.io/liquid/
 - https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+- https://stackoverflow.com/questions/22539150/iterate-over-arrays-in-liquid-templates
 
 ------------------
 
