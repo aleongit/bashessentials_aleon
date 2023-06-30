@@ -214,6 +214,12 @@ paginate_path: "/blog/page:num/"
 
 ------------------
 
+- **ruby**
+- https://ruby-doc.org/stdlib-2.5.1/libdoc/date/rdoc/Date.html
+
+
+------------------
+
 - **vmware**
 - https://www.reddit.com/r/vmware/comments/11e1sps/error_vmware_player_does_not_support_nested/
 - https://www.mumuglobal.com/faq/20210712/35472_943026.html
