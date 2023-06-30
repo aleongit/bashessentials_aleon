@@ -11,12 +11,15 @@ layout: default
     <!-- length of object -->
     <!-- {{ site.posts | size }} -->
 
-    <!-- per assignar un index al revés  -->
+    <!-- per assignar el numero de post  -->
     <!-- busco post actual (page) a la llista de posts -->
     <!-- durant un for es poden usar 'helper variables' forloop.index / forloop.rindex / forloop.index0 etc -->
     <!-- forloop.rindex      # => how many items are still left?-->
-    {% for post in site.posts %} {% if post.id == page.id %} {% assign id =
-    forloop.rindex %} {% endif %} {% endfor %}
+    {% for post in site.posts %} 
+      {% if post.id == page.id %} 
+        {% assign id = forloop.rindex %}
+      {% endif %}
+    {% endfor %}
 
     <span>{{ id }}</span>
     <h1 class="post-title p-name" itemprop="name headline">
@@ -28,8 +31,8 @@ layout: default
         datetime="{{ page.date | date_to_xmlschema }}"
         itemprop="datePublished"
       >
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y
-        ___ %k:%M" -%} {{ page.date | date: date_format }}
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y ___ %k:%M" -%} 
+        {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%} ___<span
         itemprop="author"
@@ -49,7 +52,8 @@ layout: default
   <div class="post-pagination">
     {% if page.previous.url %}
     <a href="{{ page.previous.url }}" class="post-previous"><<__previous</a>
-    {% endif %} {% if page.next.url %}
+    {% endif %} 
+    {% if page.next.url %}
     <a href="{{ page.next.url }}" class="post-next">next__>></a>
     {% endif %}
   </div>
