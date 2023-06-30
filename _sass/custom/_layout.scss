@@ -1,4 +1,23 @@
 /**
+ * Pagination
+ */
+.pagination {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid $text-color;
+  font-size: 1.2rem;
+
+  .next,
+  .previous {
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 50%;
+  }
+}
+
+
+
+/**
  * Home
  */
 .home-title {
@@ -9,6 +28,14 @@
 
 .home-subtitle {
   padding: 0 0 2rem;
+}
+
+.home-main {
+
+  .post-link {
+    background-color: aliceblue;
+    border-radius: 30px;
+  }
 }
 
 
