@@ -1,8 +1,12 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+<article
+  class="post h-entry"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
   <header class="post-header">
     <!-- length of object -->
     <!-- {{ site.posts | size }} -->
@@ -11,41 +15,43 @@ layout: default
     <!-- busco post actual (page) a la llista de posts -->
     <!-- durant un for es poden usar 'helper variables' forloop.index / forloop.rindex / forloop.index0 etc -->
     <!-- forloop.rindex      # => how many items are still left?-->
-    {% for post in site.posts %}
-      {% if post.id == page.id %}
-        {% assign id = forloop.rindex  %}
-      {% endif %}
-    {% endfor %}
+    {% for post in site.posts %} {% if post.id == page.id %} {% assign id =
+    forloop.rindex %} {% endif %} {% endfor %}
 
     <span>{{ id }}</span>
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <h1 class="post-title p-name" itemprop="name headline">
+      {{ page.title | escape }}
+    </h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y ___ %k:%M" -%}
-        {{ page.date | date: date_format }}
+      <time
+        class="dt-published"
+        datetime="{{ page.date | date_to_xmlschema }}"
+        itemprop="datePublished"
+      >
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y
+        ___ %k:%M" -%} {{ page.date | date: date_format }}
       </time>
-      {%- if page.author -%}
-      ___<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
-          itemprop="name">{{ page.author }}</span></span>
+      {%- if page.author -%} ___<span
+        itemprop="author"
+        itemscope
+        itemtype="http://schema.org/Person"
+        ><span class="p-author h-card" itemprop="name"
+          >{{ page.author }}</span
+        ></span
+      >
       {%- endif -%}
     </p>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
+  <div class="post-content e-content" itemprop="articleBody">{{ content }}</div>
 
   <!-- Previous / Next Post -->
   <div class="post-pagination">
     {% if page.previous.url %}
-    <a href="{{ page.previous.url }}" class="post-previous">
-      <<__previous< /a>
-        {% endif %}
-
-        {% if page.next.url %}
-        <a href="{{ page.next.url }}" class="post-next">next__>></a>
-        {% endif %}
+    <a href="{{ page.previous.url }}" class="post-previous"><<__previous</a>
+    {% endif %} {% if page.next.url %}
+    <a href="{{ page.next.url }}" class="post-next">next__>></a>
+    {% endif %}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
