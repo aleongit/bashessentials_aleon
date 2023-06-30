@@ -214,11 +214,24 @@ paginate_path: "/blog/page:num/"
 
 ------------------
 
+- **liquid**
+- https://shopify.github.io/liquid/
+- https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+
+------------------
+
 - **ruby**
 - https://ruby-doc.org/stdlib-2.5.1/libdoc/date/rdoc/Date.html
 
 
 ------------------
+
+- **css**
+- https://stackoverflow.com/questions/21369843/is-there-a-way-to-make-numbers-in-an-ordered-list-bold
+
+
+------------------
+
 
 - **vmware**
 - https://www.reddit.com/r/vmware/comments/11e1sps/error_vmware_player_does_not_support_nested/
