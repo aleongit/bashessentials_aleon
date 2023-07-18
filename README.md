@@ -37,6 +37,7 @@
 
 ## Get Started
 - git clone https://github.com/aleongit/bashessentials_aleon.git
+- cd bashessentials_aleon/
 - Run `bundle install`
 - Run `bundle exec jekyll serve`
 - Visit browser at `http://localhost:4000` or host in **_config.yml**
