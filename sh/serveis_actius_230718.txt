@@ -1,0 +1,9 @@
+UNIT FILE                          STATE   PRESET
+getty@.service                     enabled enabled
+NetworkManager-dispatcher.service  enabled disabled
+NetworkManager-wait-online.service enabled disabled
+NetworkManager.service             enabled disabled
+sshd.service                       enabled disabled
+remote-fs.target                   enabled enabled
+
+6 unit files listed.

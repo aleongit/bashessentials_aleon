@@ -1,0 +1,61 @@
+#!/bin/bash
+#Aleix Leon
+#19. Dissenyeu un script que permeti fer una còpia del fitxer passwd
+#anomenada “passwd_copia”. Prèviament s’ha de comprovar si ja existeix
+#aquest fitxer còpia i si és així, dir quina és la data de modificació i deixar
+#escollir si es fa una nova còpia. A més a més, el programa ha de mostrar
+#quins usuaris tenen carpeta home.
+
+function copia()
+{
+echo "Copiant fitxer ..."
+sleep 2
+cp $fitxer $fcopia
+echo "$fitxer copiat ok"
+echo
+}
+
+clear
+
+fitxer=/etc/passwd
+fcopia=passwd_copia
+
+#comprovar si còpia
+if ! [ -f $fcopia ]; then
+   echo "No existeix còpia de $fitxer"
+   copia
+
+else
+#comprovar data còpia
+#amb stat, data modificació i tallant fins obternir només data
+#amb date --date() ho converteix en format 'data'
+#stat test.txt | grep Mod* | cut -d' ' -f2,3 | cut -d' ' -f1
+
+#separo data i hora perquè no m'ho deixa fer tot junt
+dm=$( date --date $( stat $fcopia | grep Mod* | cut -d' ' -f2 ) +"%A, %d-%m-%y" )
+hm=$( date --date $( stat $fcopia | grep Mod* | cut -d' ' -f3 ) +"%H:%M")
+
+echo "Existeix fitxer $fcopia"
+echo "Data Última Modificació: $dm $hm"
+
+#preguntar si fer nova còpia#
+patro='^[sSnN]$'
+resposta="0"
+while ! [[ $resposta =~ $patro ]]; do
+read -p "Vols fer una nova còpia? [s/n]: " resposta
+
+case $resposta in
+   s|S) copia				;;
+   n|N) echo -e "\nNO copiem fitxer" 	;;
+     *) echo "** FATAL ERROR **"	;;
+esac
+done
+fi
+
+#usuaris amb carpeta home
+#columna usuari 1
+#columna path 6
+echo -e "\nEls usuaris amb carpeta /home (columna 6 fitxer passwd) són:\n"
+#tallem, ordenem i mostrem en columnes
+cut -d : -f 1,6 /etc/passwd | grep /home | sort | column
+echo
