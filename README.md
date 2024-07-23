@@ -206,6 +206,7 @@ paginate_path: "/blog/page:num/"
 - https://jekyllrb.com/docs/structure/
 - https://jekyllrb.com/docs/variables/
 - https://jekyllrb.com/docs/pagination/
+- https://stackoverflow.com/questions/26196559/how-to-adjust-jekyll-post-order
 
 ------------------
 
