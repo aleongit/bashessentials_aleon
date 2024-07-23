@@ -104,6 +104,14 @@ You may fix it by adding webrick to your dependencies:
 bundle add webrick
 ``` 
 
+- **json**
+
+- a juliol 2024 he hagut d'afegir el paquet 'json' per error al iniciar el servidor
+- https://www.adamsdesk.com/posts/jekyll-fix-cannot-load-such-file-json/
+- a fitxer 'Gemfile' afegir al final:
+```
+gem "json"
+```
 
 
 ## jekyll configuration
