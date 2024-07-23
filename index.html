@@ -11,8 +11,8 @@ var: 'Welcome to my compilation of essential BASH exercises on Jekyll blog-aware
 <main class="home-main">
     {%- if site.posts.size > 0 -%}
 
-    <ol reversed class="post-list">
-        {%- for post in site.posts -%}
+    <ol class="post-list">
+        {%- for post in site.posts reversed -%}
         <li>
             <a class="post-link" href="{{ post.url | relative_url }}">
                 {{ post.title | escape }}
