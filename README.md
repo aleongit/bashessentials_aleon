@@ -46,7 +46,7 @@
 
 ## run
 - cd bashessentials_aleon
-- bundle exec jekyll serve
+- `bundle exec jekyll serve`
 - Browse to http://localhost:4000
 - or change host in **_config.yml**
 ```
