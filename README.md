@@ -10,7 +10,8 @@
 
 ## requeriments
 
-- Ruby version 2.5.0 or higher, including all development headers
+- Ruby version 2.5.0 or higher (up to 3.3.0), including all development headers
+- rbenv: version manager tool for the Ruby programming language on Unix-like systems
 - RubyGems
 - GCC and Make
 
@@ -58,6 +59,50 @@ baseurl             : "" # does not include hostname
 show_dir_listing    : false
 ```
 
+
+## rbenv
+
+- install `rbenv` and `ruby-build`
+```
+sudo pacman -S --needed rbenv ruby-build
+```
+
+- edit `.bashrc`
+```
+nano ~/.bashrc
+```
+- Append these lines to the end of the file
+```
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - bash)"
+```
+- call `.bashrc`
+```
+source ~/.bashrc
+```
+
+- install ruby version (3.3.0)
+```
+rbenv install 3.3.0
+```
+
+- go to the project folder and set the local Ruby version
+```
+cd /home/aleon/bashessentials_aleon/
+rbenv local 3.3.0
+```
+
+- check version in the folder
+```
+rbenv versions
+ruby --version
+```
+
+- bundle install
+```
+bundle install
+```
 
 
 ## installation in Arch Linux
